@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap");
+
+body {
+  background-color: #f6f6f6;
+  margin: 0px;
+  font-family: "Jost", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#title {
+  text-align: center;
+  text-shadow: 4px 4px 8px rgb(132, 216, 236);
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+}
+
+.music_container {
+  width: 30vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4rem;
+  box-shadow: 0px 0px 10px 2px rgb(207, 206, 206);
+  background-color: #ffffff;
+}
+
+.img_container {
+  width: 200px;
+  height: 200px;
+  margin: 1rem 0;
+}
+
+.img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px 2px rgba(165, 164, 164, 0.822);
+}
+
+@media (max-width: 750px) {
+  .img_container {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+#song {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0px 2px 5px rgba(150, 163, 165, 0.527);
+}
+
+#singer {
+  text-shadow: 0px 2px 5px rgba(150, 163, 165, 0.527);
+}
+
+.music_controls {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.music_controls i {
+  cursor: pointer;
+  font-size: 1rem;
+  transition: font-size 0.2s;
+  filter: drop-shadow(0px 5px 5px rgb(155, 171, 175));
+}
+
+.main_control {
+  background-color: black;
+  color: white;
+  padding: 10px 9px 10px 12px;
+  font-size: 1.5rem !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.main_control:hover {
+  background-color: white;
+  color: black;
+}
+
+.anim_rotate {
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 750px) {
+  .music_container {
+    width: 90vw;
+  }
+  .music_controls {
+    width: 70%;
+  }
+}
+
+/* time box  */
+.timecont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  /* border: 1px solid black; */
+}
+
+.timebox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.timebox span {
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+
+.outerbar {
+  box-shadow: 0px 1px 10px 2px rgba(204, 204, 204, 0.671);
+  width: 100%;
+  height: 0.5rem;
+  background-color: #919a9e;
+  position: relative;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.innerbar {
+  border-radius: inherit;
+  width: 0%;
+  height: inherit;
+  background-color: #74b9ff;
+  position: absolute;
+  color: red;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}

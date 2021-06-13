@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="style.css">
+</head>
+
+<body>
+
+
+    <div class="main_div">
+        <h1 id="title">Music Player App</h1>
+        <div class="music_container">
+            <h2 id="song">LOTUS LANE</h2>
+            <h3 id="singer">The Loyalist</h3>
+            <audio src="music/song1.mp3"></audio>
+            <div class="img_container">
+                <img id="image" src="img/song1.jpg" alt="image">
+            </div>
+
+            <div class="timecont">
+                <div class="timebox">
+                    <span id="stime">0:00</span>
+                    <span id="etime">2:37</span>
+                </div>
+                <div class="outerbar">
+                    <div class="innerbar"></div>
+                </div>
+            </div>
+            <!-- music controls -->
+            <div class="music_controls">
+                <i class='fa fa-backward' id="prev" title="backwards"></i>
+                <i class='fa fa-play main_control' id="play" title="play"></i>
+                <i class='fa fa-forward' id="forward" title="forward"></i>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
